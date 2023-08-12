@@ -1,0 +1,27 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(){
+    int basic;
+    cin>>basic;
+    float salary,hr,da,pf,allow;
+    char grade;
+    cin>>grade;
+    hr = 0.2*basic;
+    da = 0.5*basic;
+    pf =0.11*basic;
+    if(grade == 'A'){
+        allow = 1700;
+        salary = basic+hr+da+allow-pf;
+        cout<<round(salary);
+    }else if(grade == 'B'){
+        allow=1500;
+        salary = basic+hr+da+allow-pf;
+        cout<<round(salary);
+    }else{
+        allow = 1300;
+        salary = basic+hr+da+allow-pf;
+        cout<<ceil(salary);
+    }
+
+}
