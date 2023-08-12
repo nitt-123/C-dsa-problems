@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+	// Write your code here
+	int a;
+	cin>>a;
+	if(a>75&&a<100){
+		cout<<"Distinction";
+	}else if(a>50&&a<75){
+		cout<<"Average";
+	}else if(a>35&&a<50){
+		cout<<"Below Average";
+	}
+	return 0;
+}
